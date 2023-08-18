@@ -8,13 +8,22 @@ You, the last survivor who knows how to code, will help the resistance by deploy
 
 ## Requirements
 
-You will develop a **RESTful API** (yes, we care about architecture design even amid a zombie apocalypse!), which will store information about the survivors, as well as the resources they own.
+Develop a **RESTful API**, which will store information about the survivors, as well as the resources they own.
 
 To accomplish this, the API must fulfill the following use cases:
 
-- *Add survivors to the database*
-
-  A survivor must have a name, age, gender and *last location (latitude, longitude)*. We want this database to be accurate, so add basic validation for each field.
+- *Add survivors (post "/api/survivors" )*
+  ```
+  {
+    "survivor": {
+      "name": "John One",
+      "age": 23,
+      "gender": "M",
+      
+      
+    }
+  }
+  ```
 
   Each survivor has their inventory of resources/items. The survivor must declare all of their resources in the sign-up process. We will believe they have what they say they have.
 
